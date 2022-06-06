@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Image Editor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+    </body>
+    <div class="file-upload-section" onclick="selectImage()">
+        <input id="foto-file" type="file">
+        Select Image
+    </div>
+    
+    <div class="img-container">
+        <img id="foto-image" class="image"/>
+    </div>
+    <script src="lib\foto.min.js"></script>
+
+    <div class="buttons-section">
+        <table class="buttons-table">
+            <tr>
+                <td> <button class="operation-btn" onclick="makeBright()">Brighter</button>
+                </td>
+                <td> <button class="operation-btn" onclick="makeGreyscale()">Greyscale</button>
+                </td>
+                <td> <button class="operation-btn" onclick="makeDark()">Dark</button>
+                </td>
+            <tr>
+                <td> <button class="operation-btn" onclick="makeBlur()">Blur</button>
+                </td>
+                <td> <button class="operation-btn" onclick="makeEmboss()">Emboss</button>
+                </td>
+                <td> <button class="operation-btn" onclick="makeSharp()">Sharp</button>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td colspan="3"><button class="operation-btn download-btn" onclick="download()">Download</button></td>
+            </tr>
+        </table>
+    </div>
+   
+</html>
